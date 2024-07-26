@@ -7,7 +7,7 @@ int main(void)
     
     scanf("%d", &v);
 
-    vkms = (float)(v * 1000) / (float)(60 * 60);
+    vkms = (float)(v * 1000) / (60 * 60);
     
     printf("%f", vkms);
     
