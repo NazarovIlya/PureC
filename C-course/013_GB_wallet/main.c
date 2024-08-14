@@ -1,4 +1,6 @@
 #include <stdio.h>
+#define SICKLES 17
+#define KNUTS 29
 
 int main(void)
 {
@@ -10,12 +12,12 @@ int main(void)
   s = s1 + s2;
   k = k1 + k2;
 
-  s += k / 29;
-  k = k - (k / 29) * 29;
-  g += s / 17;
-  s = s - (s / 17) * 17;
+  s += k / KNUTS;
+  k = k - (k / KNUTS) * KNUTS;
+  g += s / SICKLES;
+  s = s - (s / SICKLES) * SICKLES;
 
-  printf("%d %d %d", g, s, k);
+  printf("%d %d %d\n", g, s, k);
 
   return 0;
 }
